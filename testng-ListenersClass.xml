@@ -7,6 +7,7 @@
 	<test name="Test">
 		<classes>
 			<class name="com.crm.ProductTests.CreateProductWithQtyTest" />
+			<class name="com.crm.ProductTests.CreateProductWithQtyUnitTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

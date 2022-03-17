@@ -27,7 +27,7 @@ public class CreateProductandSearchByProductNameTest extends BaseClass
 		/*Step 5: Create Product */
 		CreateProductPage cpp = new CreateProductPage(driver);
 		cpp.createProduct(proName);
-		
+		 
 		/*Step 6: Search Product by Product Name */
 		pp.searchByInType(driver, proName, inType);
 			

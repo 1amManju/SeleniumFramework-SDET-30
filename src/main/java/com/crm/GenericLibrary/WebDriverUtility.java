@@ -287,9 +287,10 @@ public class WebDriverUtility
 	 * This method is used to take Screen shot
 	 * @param driver
 	 * @param screenShotName
+	 * @return 
 	 * @throws Throwable
 	 */
-	public void getScreenShot(WebDriver driver , String screenShotName) throws Throwable
+	public String getScreenShot(WebDriver driver , String screenShotName) throws Throwable
 	{
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
@@ -298,6 +299,7 @@ public class WebDriverUtility
 		//Files.copy(src, dst);
 		FileUtils.copyFile(src, dst);
 		//"C:\Users\Manjunath\Desktop\Screeeeen"
+		return dst.getAbsolutePath();
 	}
 	
 	

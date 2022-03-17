@@ -14,7 +14,7 @@ import com.crm.ObjectRepository.ProductPage;
 public class CreateProductWithQtyTest extends BaseClass
 {
 	
-	@Test(retryAnalyzer=com.crm.GenericLibrary.RetryAnalyserImplimentation.class)
+	@Test
 	public void createProductWithQtyTest() throws Throwable
 	{
 		Assert.fail();
