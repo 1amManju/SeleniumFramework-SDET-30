@@ -1,6 +1,5 @@
 package com.crm.ProductTests;
 
-import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -17,7 +16,7 @@ public class CreateProductWithQtyTest extends BaseClass
 	@Test
 	public void createProductWithQtyTest() throws Throwable
 	{
-		Assert.fail();
+		
 		//READ data from excel sheet
 		String proName = eLib.readDataFromExcel("Products", 4, 2);
 		int qty = eLib.readNumericDataFromExcel("Products", 4, 3);
